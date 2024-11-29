@@ -8,7 +8,7 @@
 #include "CARD.h"
 
 using namespace std;
-
+//20:00 test
 class Account {
 private:
     static int next_id; // 1, 2, 3... generator
@@ -18,12 +18,10 @@ private:
     string account_user_name; // Account holder's name
     string account_password; // Account password
     int account_funds; // Account balance
-    //삭제 string connected_card_number; 
     Card* associated_card;
     vector<string> transaction_history; // Transaction history ??
 
 public:
-    //삭제 Account(Bank* bank, string user_name, int account_number, int initial_funds, string password, string card_number);
     Account(Bank* bank, string user_name, int initial_funds, string password, const string& card_number, const string& account_number);
     ~Account();
 
